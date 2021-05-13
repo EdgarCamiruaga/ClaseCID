@@ -22,19 +22,6 @@ public class Agente extends Agent {
 			}
 		} );
 	}    
-
-    private class MyOneShotBehaviour extends OneShotBehaviour {
-
-        public void action() {
-            System.out.println("Agent's action method executed");
-
-        } 
-        
-        public int onEnd() {
-        myAgent.doDelete();   
-        return super.onEnd();
-        } 
-    }    // END of inner class ...Behaviour
 }
 
 
